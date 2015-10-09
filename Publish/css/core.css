@@ -1,0 +1,567 @@
+/* 
+Green       194A24
+Tanbark     752B15
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+    background: #000;
+    color:#FFF;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1, h4, h4 a, li a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 1px solid #FFF;
+}
+
+li a, h1 a, h2 a, h3 a, h4, h4 a {
+    border: 0px;
+}
+
+.hidden, .printOnly {
+    display: none;
+}
+
+
+#pageBackground {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#pageBackground img {
+    width: 100%;
+    height: auto;
+}
+
+
+div#head {
+    position: fixed;
+    top: 20px;
+    //left: 13px;
+    z-index: 220;
+}
+
+
+#browseMenu.button {
+    display:none;
+}
+
+div#head:hover ul, #browseMenu ul:hover {
+    display: block!important;
+    z-index: 220;
+}
+
+.button {
+    display: inline-block;
+    min-height:15px;
+    font-weight: bold;
+    padding: 8px 9px 6px 8px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 9px;
+}
+
+.button:hover {
+    color: #FFF!important;
+}
+
+
+
+
+div#head ul  {
+    position:absolute;
+    top:-6px;
+    left:-6px;
+    width:235px;
+    z-index:520!important;
+    text-align:left;
+    line-height:26px;
+    background: #222;
+    color: #FFF;
+    padding-bottom:10px;
+    background: rgb(29, 28, 28) -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1.0))) repeat-x !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 9px; -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 9px;
+}
+
+
+
+div#head  ul li {
+    margin-left:10px;
+    margin-top:2px;
+    border-top:1px solid #444;
+    padding-top:5px;
+}
+
+div#head  ul li:first-child {
+    border-top:0px;
+}
+
+div#head  ul li a {
+     color:#999;
+     letter-spacing:0px;
+}
+
+div#head  ul li a b {
+    color: #FFFFFF;
+}
+
+div#head  ul li a:hover {
+    color:#FFF !important;
+}
+
+div#head  ul li a.active {
+     color:#FFF!important;
+}
+.new {
+    color: #666!important;
+    display:block;
+    position:absolute;
+    bottom:10px;
+    right:15px;
+    font-size:80%;
+}
+
+body.home #browseMenu.button {
+    display: block;
+}
+
+body.home #head {
+    top: 10%;
+//    right: 270px;
+    left: 0px;
+    position: absolute!important;
+}
+
+body.home div#head h3 {
+    padding: 0!important;
+    margin: 0;
+    line-height: 20px;
+}
+
+body.home.de div#head ul {
+    width: 260px;
+    right: 10px;
+}
+
+body.home.en div#head ul {
+    width: 290px;
+}
+
+body.home div#head  ul li:first-child {
+    padding-bottom: 8px;
+    padding-top: 38px;
+}
+
+
+/*  home   */
+
+.content {
+    text-align:left;
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;
+    display:block;
+    z-index:50!important;
+    position:relative;
+    margin: 0 auto;
+    margin-top:20px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.content {
+    margin-bottom: 100px!important;
+}
+
+
+#footer {
+    z-index:200;
+}
+
+#partners {
+    z-index:200;
+}
+
+#partners ul li a {
+    z-index: 200;
+}
+
+
+/* end home  */
+
+/*  pages   */
+
+.content p {
+    line-height:138%;
+    margin-bottom:20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px!important;
+}
+
+.content p.colorHighlight {
+    padding-top:14px;
+}
+
+.content h3 {
+    padding:0;
+    font-size:42px;
+    margin-bottom:0px;
+    margin-left:-4px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-family: "Josefin Sans Std Light", Arial, sans-serif;
+    font-weight:normal!important;
+}
+
+.content h4 {
+    padding:0;
+    font-weight:normal;
+    font-size: 14px;
+    line-height:110%;
+    text-transform:uppercase;
+    margin-bottom:14px;
+    margin-top:4px;
+    font-weight:bold;
+    letter-spacing:1px;
+    padding-top: 16px;
+}
+
+h4.headline {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 42px;
+    margin-bottom: 0px;
+}
+
+
+img.inlineImage {
+    width:100%!important;
+    max-width:380px;
+    height:auto;
+}
+
+img.inlineImage  {
+    cursor: url(/img/zoom.ico)!important;
+}
+
+#colorBar {position:fixed; top:0;left:0;width:100%;z-index:200!important}
+
+blockquote {
+    margin:0 auto;
+    font-size:18px;
+    margin-bottom:30px;
+    margin-top:32px;
+    font-weight:normal;
+    line-height:130%;
+    font-style:italic;
+    font-family: Georgia, 'Hiragino Mincho Pro', serif;
+}
+
+blockquote small {
+    font-size:12px;
+    padding-left:20px;
+    margin-right:-20px;
+
+}
+.wide, .thin { clear:both; }
+.column{ padding: 5px; }
+
+.spacer {
+    height:200px;display:block;margin-top:200px;
+}
+
+object {
+        -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;
+        margin:0 auto;
+
+}
+
+/* end pages  */
+
+
+
+/* footer */
+
+#footer {
+    display: block;
+    z-index: 200!important;
+    position:relative;
+
+    background: #000;
+    width: 100%;
+    min-width: 740px;
+}
+
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -120px!important;
+    overflow: hidden;
+    position: relative;
+}
+
+#push {
+    height: 120px!important;
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    height: 120px;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+
+
+/* end footer */
+
+
+.entryNavigation {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    min-height: 30px;
+    display: block;
+    -webkit-border-top-left-radius: 6px; -moz-border-topleft-radius: 6px; -khtml-border-topleft-radius: 6px; border-topleft-radius: 6px;
+    -webkit-border-top-right-radius: 6px; -moz-border-topright-radius: 6px; -khtml-border-topright-radius: 6px; border-topright-radius: 6px;
+    width: 100%;
+
+}
+
+.entryNavigation li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.entryNavigation li:first-child {
+    margin-left:18px;
+}
+
+div.content .entryNavigation li a {
+    color: #333!important;
+    font-size: 13px!important;
+    text-transform: uppercase;
+}
+
+
+div.content .entryNavigation li a.active, div.content .entryNavigation li a:hover {
+    color:#F9F9F9!important;
+    }
+
+
+
+p.imageSubTitle {font-size:11px!important;color:#ccc!important;margin-top:3px;}
+
+
+
+object {display:block;margin:0 auto;margin-bottom:20px;width:100%!important;min-width:515px;padding-top:30px;padding-bottom:30px; background:#000;}
+
+.content {padding-left:20px;padding-right:20px;width:60%;max-width:800px;}
+
+
+img.floatingImage {
+    display:block!important;
+    width:100%;
+    max-width:800px!important;
+    height:auto;
+}
+
+a.floatingImage {
+     display:block;
+     text-align:left;
+     text-decoration:none!important;
+     border:none!important;"
+}
+
+.gallery {
+    padding-bottom: 30px;
+    display: block;
+}
+
+.gallery li {
+    float: left;
+    margin-right: 8px;
+}
+
+.gallery li a img {
+    width: 80px;
+    height: auto;
+    border: 1px solid #666;
+}
+
+.clear.both {
+    clear: both;
+}
+
+
+#pageDetails {
+    position: fixed;
+    right: 20px;
+    top: 2px;
+    height: 18px;
+    width: 130px;
+    z-index: 200;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 6px;
+        -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#photoDetails {
+    position: fixed;
+    width: 340px;
+    text-align: left;
+    height: 200px;
+    right: 20px;
+    top: 48px;
+    z-index: 200;
+    display: block;
+    display: none;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+}
+
+
+#footer #sponsors {
+    width: 720;
+    margin: 0 auto;
+    opacity: .6;
+    margin-top: 10px;
+}
+
+#footer #sponsors a {
+    border: none;
+}
+
+#footer #sponsors a:hover, #footer #sponsors a:active {
+    opacity: .7;
+}
+
+#footer #closure {
+    margin-top: 14px;
+}
+
+#footer #closure, #footer #closure a {
+    font-weight: normal;
+    font-size: 9px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border:none;
+}
+
+#footer #closure a:hover, #footer #closure a:active {
+    color: #888;
+}
+
+#footer #closure span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body.home .content {
+    min-height: 400px;
+}
+
+#topnews {
+
+}
+
+#topnews a {
+    position:absolute;
+    width:578px;
+    height:26px;
+    right:0px;
+    top:-44px;
+    z-index:500!important;
+    background: #FFCC00 url(../images/custom/mittagsmagazin.png) top left no-repeat;
+    color:#000;
+    text-align:right;
+    padding-top:18px;
+    padding-right:20px;
+    font-size:13px;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-decoration: none!important;
+    border:0px!important;
+}
+
+body.home #browseMenu {
+right: 0px!important;
+
+}

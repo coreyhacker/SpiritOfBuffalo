@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32CDBF08-9094-42CD-91D1-E32938EB41D6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SpiritofBuffalo</RootNamespace>
+    <AssemblyName>SpiritofBuffalo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SpiritofBuffalo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SpiritofBuffalo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="js\domroll.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company.aspx.designer.vb">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company.aspx.vb">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Brew.aspx.designer.vb">
+      <DependentUpon>Brew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Brew.aspx.vb">
+      <DependentUpon>Brew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.vb">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2.aspx.vb">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wedding.aspx.designer.vb">
+      <DependentUpon>Wedding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wedding.aspx.vb">
+      <DependentUpon>Wedding.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Parking.aspx.designer.vb">
+      <DependentUpon>Parking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parking.aspx.vb">
+      <DependentUpon>Parking.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Dinner.aspx.designer.vb">
+      <DependentUpon>Dinner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dinner.aspx.vb">
+      <DependentUpon>Dinner.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sunset.aspx.designer.vb">
+      <DependentUpon>Sunset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sunset.aspx.vb">
+      <DependentUpon>Sunset.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.vb">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map.aspx.vb">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vessel.aspx.designer.vb">
+      <DependentUpon>Vessel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vessel.aspx.vb">
+      <DependentUpon>Vessel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Day.aspx.designer.vb">
+      <DependentUpon>Day.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Day.aspx.vb">
+      <DependentUpon>Day.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pirate.aspx.designer.vb">
+      <DependentUpon>Pirate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pirate.aspx.vb">
+      <DependentUpon>Pirate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Wine.aspx.designer.vb">
+      <DependentUpon>Wine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wine.aspx.vb">
+      <DependentUpon>Wine.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Resources.aspx.designer.vb">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.aspx.vb">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.vb">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.vb">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Photos.aspx.designer.vb">
+      <DependentUpon>Photos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Photos.aspx.vb">
+      <DependentUpon>Photos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Edu.aspx.designer.vb">
+      <DependentUpon>Edu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edu.aspx.vb">
+      <DependentUpon>Edu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Private.aspx.designer.vb">
+      <DependentUpon>Private.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private.aspx.vb">
+      <DependentUpon>Private.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Public.aspx.designer.vb">
+      <DependentUpon>Public.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public.aspx.vb">
+      <DependentUpon>Public.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SOB.Master.designer.vb">
+      <DependentUpon>SOB.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SOB.Master.vb">
+      <DependentUpon>SOB.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="font-awesome\fonts\FontAwesome.otf" />
+    <None Include="font-awesome\less\bordered-pulled.less" />
+    <None Include="font-awesome\less\core.less" />
+    <None Include="font-awesome\less\fixed-width.less" />
+    <None Include="font-awesome\less\font-awesome.less" />
+    <None Include="font-awesome\less\icons.less" />
+    <None Include="font-awesome\less\larger.less" />
+    <None Include="font-awesome\less\list.less" />
+    <None Include="font-awesome\less\mixins.less" />
+    <None Include="font-awesome\less\path.less" />
+    <None Include="font-awesome\less\rotated-flipped.less" />
+    <None Include="font-awesome\less\spinning.less" />
+    <None Include="font-awesome\less\stacked.less" />
+    <None Include="font-awesome\less\variables.less" />
+    <None Include="font-awesome\scss\font-awesome.scss" />
+    <None Include="font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="font-awesome\scss\_core.scss" />
+    <None Include="font-awesome\scss\_fixed-width.scss" />
+    <None Include="font-awesome\scss\_icons.scss" />
+    <None Include="font-awesome\scss\_larger.scss" />
+    <None Include="font-awesome\scss\_list.scss" />
+    <None Include="font-awesome\scss\_mixins.scss" />
+    <None Include="font-awesome\scss\_path.scss" />
+    <None Include="font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="font-awesome\scss\_spinning.scss" />
+    <None Include="font-awesome\scss\_stacked.scss" />
+    <None Include="font-awesome\scss\_variables.scss" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="img\pirate" />
+    <None Include="img\sunset" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Company.aspx" />
+    <Content Include="Brew.aspx" />
+    <Content Include="css\spirit.css" />
+    <Content Include="Default2.aspx" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="img\155.jpg" />
+    <Content Include="img\banner-bg.jpg" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\brew.jpg" />
+    <Content Include="img\brew.png" />
+    <Content Include="img\buffalolight.jpg" />
+    <Content Include="img\buoe-logo.png" />
+    <Content Include="img\call-o.gif" />
+    <Content Include="img\call.gif" />
+    <Content Include="img\charter.png" />
+    <Content Include="img\charters.jpg" />
+    <Content Include="img\day.jpg" />
+    <Content Include="img\daySails.png" />
+    <Content Include="img\dinner.jpg" />
+    <Content Include="img\edu.jpg" />
+    <Content Include="img\educational.png" />
+    <Content Include="img\facebook-o.gif" />
+    <Content Include="img\facebook.gif" />
+    <Content Include="img\family.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\fb-o.png" />
+    <Content Include="img\fb.png" />
+    <Content Include="img\giftcert-web.gif" />
+    <Content Include="img\H1.png" />
+    <Content Include="img\header-bg-sob.jpg" />
+    <Content Include="img\header-bg.jpg" />
+    <Content Include="img\header-brew.jpg" />
+    <Content Include="img\header-charters.jpg" />
+    <Content Include="img\header-company.jpg" />
+    <Content Include="img\header-day.jpg" />
+    <Content Include="img\header-dinner.jpg" />
+    <Content Include="img\header-edu.jpg" />
+    <Content Include="img\header-faq.jpg" />
+    <Content Include="img\header-map.jpg" />
+    <Content Include="img\header-parking.jpg" />
+    <Content Include="img\header-pirate.jpg" />
+    <Content Include="img\header-resources.jpg" />
+    <Content Include="img\header-sunset.jpg" />
+    <Content Include="img\header-vessel.jpg" />
+    <Content Include="img\header-wedding.jpg" />
+    <Content Include="img\header-wine.jpg" />
+    <Content Include="img\help.png" />
+    <Content Include="img\i-brht-o.png" />
+    <Content Include="img\i-brht.png" />
+    <Content Include="img\i-buoe-o.png" />
+    <Content Include="img\i-buoe.png" />
+    <Content Include="img\i-cny-o.png" />
+    <Content Include="img\i-cny.png" />
+    <Content Include="img\i-cs-o.png" />
+    <Content Include="img\i-cs.png" />
+    <Content Include="img\i-ps-o.png" />
+    <Content Include="img\i-ps.png" />
+    <Content Include="img\i-qcf-o.png" />
+    <Content Include="img\i-qcf.png" />
+    <Content Include="img\i-sob-o.png" />
+    <Content Include="img\i-sob.png" />
+    <Content Include="img\ig-o.png" />
+    <Content Include="img\ig.png" />
+    <Content Include="img\jolly.jpg" />
+    <Content Include="img\map-image.png" />
+    <Content Include="img\nav-about-o.png" />
+    <Content Include="img\nav-about.png" />
+    <Content Include="img\nav-contact-o.png" />
+    <Content Include="img\nav-contact.png" />
+    <Content Include="img\nav-edu-o.png" />
+    <Content Include="img\nav-edu.png" />
+    <Content Include="img\nav-faq-o.png" />
+    <Content Include="img\nav-faq.png" />
+    <Content Include="img\nav-gift-o.png" />
+    <Content Include="img\nav-gift.png" />
+    <Content Include="img\nav-home-o.png" />
+    <Content Include="img\nav-home.png" />
+    <Content Include="img\nav-private-o.png" />
+    <Content Include="img\nav-private.png" />
+    <Content Include="img\nav-public-o.png" />
+    <Content Include="img\nav-public.png" />
+    <Content Include="img\parking.jpg" />
+    <Content Include="img\pearlstreet-menu.gif" />
+    <Content Include="img\pearlstreet.jpg" />
+    <Content Include="img\pirate.jpg" />
+    <Content Include="img\pirate.png" />
+    <Content Include="img\pirateKids.png" />
+    <Content Include="img\red.png" />
+    <Content Include="img\reefrunner.gif" />
+    <Content Include="img\resources\a.gif" />
+    <Content Include="img\resources\alpha.gif" />
+    <Content Include="img\resources\b.gif" />
+    <Content Include="img\resources\black.gif" />
+    <Content Include="img\resources\blue.gif" />
+    <Content Include="img\resources\bravo.gif" />
+    <Content Include="img\resources\c.gif" />
+    <Content Include="img\resources\charlie.gif" />
+    <Content Include="img\resources\code.gif" />
+    <Content Include="img\resources\d.gif" />
+    <Content Include="img\resources\delta.gif" />
+    <Content Include="img\resources\e.gif" />
+    <Content Include="img\resources\echo.gif" />
+    <Content Include="img\resources\f.gif" />
+    <Content Include="img\resources\foxtrot.gif" />
+    <Content Include="img\resources\g.gif" />
+    <Content Include="img\resources\golf.gif" />
+    <Content Include="img\resources\h.gif" />
+    <Content Include="img\resources\hotel.gif" />
+    <Content Include="img\resources\i.gif" />
+    <Content Include="img\resources\india.gif" />
+    <Content Include="img\resources\j.gif" />
+    <Content Include="img\resources\juliet.gif" />
+    <Content Include="img\resources\k.gif" />
+    <Content Include="img\resources\kilo.gif" />
+    <Content Include="img\resources\l.gif" />
+    <Content Include="img\resources\lima.gif" />
+    <Content Include="img\resources\m.gif" />
+    <Content Include="img\resources\mike.gif" />
+    <Content Include="img\resources\n.gif" />
+    <Content Include="img\resources\novembr.gif" />
+    <Content Include="img\resources\num0.gif" />
+    <Content Include="img\resources\num1.gif" />
+    <Content Include="img\resources\num2.gif" />
+    <Content Include="img\resources\num3.gif" />
+    <Content Include="img\resources\num4.gif" />
+    <Content Include="img\resources\num5.gif" />
+    <Content Include="img\resources\num6.gif" />
+    <Content Include="img\resources\num7.gif" />
+    <Content Include="img\resources\num8.gif" />
+    <Content Include="img\resources\num9.gif" />
+    <Content Include="img\resources\o.gif" />
+    <Content Include="img\resources\oscar.gif" />
+    <Content Include="img\resources\p.gif" />
+    <Content Include="img\resources\p0.gif" />
+    <Content Include="img\resources\p1.gif" />
+    <Content Include="img\resources\p2.gif" />
+    <Content Include="img\resources\p4.gif" />
+    <Content Include="img\resources\p5.gif" />
+    <Content Include="img\resources\p6.gif" />
+    <Content Include="img\resources\p7.gif" />
+    <Content Include="img\resources\p8.gif" />
+    <Content Include="img\resources\p9.gif" />
+    <Content Include="img\resources\papa.gif" />
+    <Content Include="img\resources\q.gif" />
+    <Content Include="img\resources\quebec.gif" />
+    <Content Include="img\resources\r.gif" />
+    <Content Include="img\resources\rcflag.gif" />
+    <Content Include="img\resources\red.gif" />
+    <Content Include="img\resources\romeo.gif" />
+    <Content Include="img\resources\s.gif" />
+    <Content Include="img\resources\sierra.gif" />
+    <Content Include="img\resources\storm.gif" />
+    <Content Include="img\resources\sub1.gif" />
+    <Content Include="img\resources\sub2.gif" />
+    <Content Include="img\resources\sub3.gif" />
+    <Content Include="img\resources\t.gif" />
+    <Content Include="img\resources\tango.gif" />
+    <Content Include="img\resources\u.gif" />
+    <Content Include="img\resources\uniform.gif" />
+    <Content Include="img\resources\uscgaux.gif" />
+    <Content Include="img\resources\uspsflag.gif" />
+    <Content Include="img\resources\v.gif" />
+    <Content Include="img\resources\victor.gif" />
+    <Content Include="img\resources\w.gif" />
+    <Content Include="img\resources\warn.gif" />
+    <Content Include="img\resources\whiskey.gif" />
+    <Content Include="img\resources\x.gif" />
+    <Content Include="img\resources\xray.gif" />
+    <Content Include="img\resources\y.gif" />
+    <Content Include="img\resources\yankee.gif" />
+    <Content Include="img\resources\yellow.gif" />
+    <Content Include="img\resources\z.gif" />
+    <Content Include="img\resources\zulu.gif" />
+    <Content Include="img\signature.gif" />
+    <Content Include="img\signature.png" />
+    <Content Include="img\sob-bg.jpg" />
+    <Content Include="img\SOB-CentralWharf.png" />
+    <Content Include="img\sob-jumbo.jpg" />
+    <Content Include="img\sob-line-drawing-small.gif" />
+    <Content Include="img\SOB-logo.png" />
+    <Content Include="img\SOBWeb1.jpg" />
+    <Content Include="img\SOBWeb10.jpg" />
+    <Content Include="img\SOBWeb11.jpg" />
+    <Content Include="img\SOBWeb13.jpg" />
+    <Content Include="img\SOBWeb14.jpg" />
+    <Content Include="img\SOBWeb15.jpg" />
+    <Content Include="img\SOBWEB16.jpg" />
+    <Content Include="img\SOBWeb2.jpg" />
+    <Content Include="img\SOBWeb3.jpg" />
+    <Content Include="img\SOBWeb4.jpg" />
+    <Content Include="img\SOBWeb5.jpg" />
+    <Content Include="img\SOBWeb6.jpg" />
+    <Content Include="img\SOBWeb7.jpg" />
+    <Content Include="img\SOBWeb8.jpg" />
+    <Content Include="img\SOBWeb9.jpg" />
+    <Content Include="img\spirit-of-buffalo-hilliman-family.jpg" />
+    <Content Include="img\sunset.jpg" />
+    <Content Include="img\sunSet.png" />
+    <Content Include="img\twitter-o.gif" />
+    <Content Include="img\twitter-o.png" />
+    <Content Include="img\twitter.gif" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\wedding.jpg" />
+    <Content Include="img\wine.jpg" />
+    <Content Include="img\wine.png" />
+    <Content Include="img\youtube-o.png" />
+    <Content Include="img\youtube.png" />
+    <Content Include="img\zoom.ico" />
+    <Content Include="js\photo-gallery.js" />
+    <Content Include="Wedding.aspx" />
+    <Content Include="Parking.aspx" />
+    <Content Include="css\sob.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Dinner.aspx" />
+    <Content Include="js\jqBootstrapValidation.js" />
+    <Content Include="js\scrolling.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact_me.js" />
+    <Content Include="js\validEmail.js" />
+    <Content Include="Sunset.aspx" />
+    <Content Include="Map.aspx" />
+    <Content Include="Vessel.aspx" />
+    <Content Include="Day.aspx" />
+    <Content Include="Pirate.aspx" />
+    <Content Include="Wine.aspx" />
+    <Content Include="Resources.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="Photos.aspx" />
+    <Content Include="Edu.aspx" />
+    <Content Include="Private.aspx" />
+    <Content Include="Public.aspx" />
+    <Content Include="SOB.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58516</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

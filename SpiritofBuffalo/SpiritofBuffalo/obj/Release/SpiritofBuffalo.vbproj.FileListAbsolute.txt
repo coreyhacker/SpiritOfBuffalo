@@ -1,0 +1,9 @@
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\bin\SpiritofBuffalo.dll
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\bin\SpiritofBuffalo.pdb
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\bin\SpiritofBuffalo.xml
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\obj\Release\SpiritofBuffalo.Resources.resources
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\obj\Release\SpiritofBuffalo.vbproj.GenerateResource.Cache
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\obj\Release\SpiritofBuffalo.dll
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\obj\Release\SpiritofBuffalo.xml
+D:\Projects\SpiritOfBuffalo\SpiritofBuffalo\SpiritofBuffalo\obj\Release\SpiritofBuffalo.pdb

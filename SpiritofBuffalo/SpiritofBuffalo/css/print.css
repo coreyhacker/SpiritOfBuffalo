@@ -1,0 +1,51 @@
+html, body, p, h1, h2, h3, h4, h5, h6, li {
+    
+    background: #FFF;
+    color: #000!important;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#closure, #sponsors, #pageBackground, .entryNavigation, #colorBar, #browseMenu, #pageDetails, .button, #footer, #push {
+    display: none;
+}
+
+#background {
+    display: none;
+}
+
+h2 {
+    display: none;
+}
+
+.content {
+    margin-top: 0px!important;
+    padding-top: 0px!important;
+    width: 90%!important;
+}
+
+#wrapper {
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+#core {
+    margin-top: 0px!important;
+    padding-top: 0px!important;
+    width: 75%!important;
+}
+p {
+    font-size: 11px!important;
+    line-height: 17px!important;
+}
+
+blockquote, img {
+    display: none;
+
+}
+
+
